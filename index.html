@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aqua Noir</title>
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Inter:wght@400;500&display=swap'>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="pct">Loading 0%</div>
+<canvas id="c2"></canvas>
+<div id="hint">Click &amp; hold</div>
+<div id="bar"></div>
+<div id="dot"></div>
+
+<header id='ui'><span id='logo'>Aqua Noir</span><button id='disc'>Discover the collection</button><button id='menuBtn'>Menu</button></header>
+<main id='hero'><h1 id='title'></h1><p id='sub' class='out'></p></main>
+<div id='chap'><div id='chNum'></div><h2 id='chTitle'></h2><p id='chNotes'></p></div>
+<div id='veil'></div><div id='holdTxt'></div><div id='tip'></div>
+<nav id='menu'>
+  <h3>The collection · Eau de parfum · 50 ml</h3>
+  <div class='row'><b data-t='Essence'>Essence</b><span>I · Cold iris, vetiver,<br>a single drop of ink</span></div>
+  <div class='row'><b data-t='Orchard'>Orchard</b><span>II · Black apple, moon salt,<br>cold glass</span></div>
+  <div class='row'><b data-t='Fracture'>Fracture</b><span>III · Pink pepper, broken ice,<br>smoke</span></div>
+  <p>Atelier — hello@aquanoir.example<br>Open by appointment, after midnight</p>
+</nav>
+<script src="js/text-ui.js"></script>
+<div id='intro'>
+  <div id="ibar"></div>
+  <svg id="idrop" viewBox="0 0 26 34"><path id="idp" fill="#000" d="M13 1C13 1 25 15 25 22A12 12 0 0 1 1 22C1 15 13 1 13 1Z"/></svg>
+  <div id="itrack"></div><div id="iline"></div>
+</div>
+<script src="js/intro-loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/hero-text-fx.js"></script>
+<script src="js/scenes.js"></script>
+</body>
+</html>
